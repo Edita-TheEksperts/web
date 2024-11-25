@@ -11,7 +11,7 @@ import FourPillar from '../components/FourPillars';
 import ContactForm from '../components/ContactForm';
 import firstImage from '/images/Photo.png';
 import secondImage from '/images/Photo2.png';
-import figure from '/images/figure.png';
+import figure from '/images/Figure.png';
 import logo3 from '/images/logo3.png';
 import Submenu from '../components/Submenu'
 import '../styles/global.css'; 
