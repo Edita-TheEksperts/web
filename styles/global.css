@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* styles/globals.css */
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+  
+  .scroll-smooth {
+    scroll-behavior: smooth;
+  }
+  
+  /* styles/global.css */
+
+.cloudy-section {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.cloudy-section:hover {
+  background: radial-gradient(circle, #ffffff, #b3e5fc, #29b6f6);
+}
+
+/* Cloud shapes using pseudo-elements */
+.cloudy-section::before,
+.cloudy-section::after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  background-color: #29b6f6;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.cloudy-section:hover::before {
+  top: -50px;
+  left: -50px;
+  width: 200px;
+  height: 200px;
+  opacity: 1;
+}
+
+.cloudy-section:hover::after {
+  bottom: -50px;
+  right: -60px;
+  width: 200px;
+  height: 200px;
+  opacity: 1;
+}
